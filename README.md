@@ -1,4 +1,5 @@
 # Adyen Android Assignment
+- Git link: https://github.com/shahwaiz90/adyen-nearbyplaces
 
 ## YouTube Video Demo
 
@@ -22,14 +23,14 @@
 - Interface implementation `To communicate efficiently, mostly from adapter to activity click events.`
 
 ## 3. CashRegister Logic in processTransaction (Summary)
-- If product price is greater than amount paid then we through exception, if not then go to step 2.
+- If product price is greater than amount paid then we throw exception, if not then go to step 2.
 - We reverse the list.
 - We start from the end of the list, untill payBackAmount(amountPaid - productPrice) is minimum.
 - We check the count of the current bill/coin.
   - If count is more than 1, then we make keep on subtracting those amounts until we get amount equal to payBackAmount or less.
   - If count is not more than 1, then we just subtract it go to the next index.
 - Then we keep on subtracting the amount untill we get payBackAmount or less.
-- If the amount is equal to payBackAmount we return the change, otherwise we through exception that change is not available.
+- If the amount is equal to payBackAmount we return the change, otherwise we throw exception that change is not available.
 - I think it can be improved if we start from center and apply binary search on it.
 
 ## 4. Demo Screenshots
