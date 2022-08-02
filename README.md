@@ -19,6 +19,7 @@
 - Dependency Injection: HILT. `To achieve dependency injection concept in the SOLID principles`
 - Coroutines. `To achieve simplification in API requests and making less load on the memory`
 - LocationServices: FusedLocationProviderClient. `To avoid draining the battery`
+- Interface implementation `To communicate efficiently, mostly from adapter to activity click events.`
 
 ## 3. CashRegister Logic in processTransaction (Summary)
 - If product price is greater than amount paid then we through exception, if not then go to step 2.
