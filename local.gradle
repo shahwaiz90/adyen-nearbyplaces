@@ -1,0 +1,5 @@
+android {
+    defaultConfig {
+        buildConfigField "String", "FOURSQUARE_SECRET_KEY", "\"fsq3aYBaVmsO2ZLaNiErfy4sCuOn8FGzEPbqjEjCMieJWpk=\""
+    }
+}

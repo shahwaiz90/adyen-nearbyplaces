@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/small"
+    android:id="@+id/place_container"
+    android:layout_marginTop="@dimen/small"
+    android:layout_marginEnd="@dimen/small"
+    android:layout_marginBottom="@dimen/small"
+    app:cardCornerRadius="@dimen/regular"
+    app:cardElevation="@dimen/x4small_3">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/location_icon"
+            android:layout_width="@dimen/xxlarge_80"
+            android:layout_height="@dimen/xxlarge_80"
+            android:layout_marginStart="@dimen/small"
+            android:layout_marginBottom="@dimen/small"
+            android:background="@drawable/rounded_corners"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/place_name" />
+
+        <TextView
+            android:id="@+id/place_name"
+            android:layout_width="@dimen/zero_margin"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/xsmall_12"
+            android:layout_marginTop="@dimen/xsmall_12"
+            android:layout_marginEnd="@dimen/small"
+            android:textSize="@dimen/caption_19sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/location_icon"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Venue name" />
+
+        <TextView
+            android:id="@+id/location_description"
+            android:layout_width="@dimen/zero_margin"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/x4small"
+            android:textSize="@dimen/caption_subtitle_13"
+            app:layout_constraintEnd_toEndOf="@+id/place_name"
+            app:layout_constraintStart_toStartOf="@+id/place_name"
+            app:layout_constraintTop_toBottomOf="@+id/place_name"
+            tools:text="Fast Food" />
+
+        <TextView
+            android:id="@+id/distance"
+            android:layout_width="@dimen/zero_margin"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x4small"
+            android:textSize="@dimen/caption_subtitle_13"
+            app:layout_constraintEnd_toEndOf="@+id/place_name"
+            app:layout_constraintStart_toStartOf="@+id/location_description"
+            app:layout_constraintTop_toBottomOf="@+id/location_description"
+            tools:text="Closing at 3:30 PM" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

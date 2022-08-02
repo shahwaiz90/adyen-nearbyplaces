@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Android Assignment</string>
+    <string name="you_are_here">You are here!</string>
+    <string name="give_location_permission">Please give location permission to use this app.</string>
+    <string name="turn_on_location_to_see">Please turn on your device location to see near by places</string>
+    <string name="ok">Ok</string>
+    <string name="location_disabled">Location Disabled</string>
+    <string name="no_places_near_by">There are no places near by.</string>
+    <string name="distance_n_meters">Distance %1$s meters</string>
+    <string name="find_near_by_places">Find near by places</string>
+</resources>

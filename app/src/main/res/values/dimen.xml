@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="zero_margin">0dp</dimen>
+    <dimen name="x5small">1dp</dimen>
+    <dimen name="x4small">2dp</dimen>
+    <dimen name="x4small_3">3dp</dimen>
+    <dimen name="xxxsmall">4dp</dimen>
+    <dimen name="xxsmall">6dp</dimen>
+    <dimen name="xsmall">8dp</dimen>
+    <dimen name="xsmall_10">10dp</dimen>
+    <dimen name="xsmall_12">12dp</dimen>
+    <dimen name="xsmall_14">14dp</dimen>
+    <dimen name="small">16dp</dimen>
+    <dimen name="regular">20dp</dimen>
+    <dimen name="medium">24dp</dimen>
+    <dimen name="large">32dp</dimen>
+    <dimen name="large_36">36dp</dimen>
+    <dimen name="xlarge">48dp</dimen>
+    <dimen name="xxlarge">64dp</dimen>
+    <dimen name="xxlarge_80">80dp</dimen>
+    <dimen name="xxxlarge">100dp</dimen>
+    <dimen name="x4large">180dp</dimen>
+
+    <dimen name="tag_text">11sp</dimen>
+    <dimen name="text_11sp">11sp</dimen>
+    <dimen name="caption_body_1">14sp</dimen>
+    <dimen name="caption_body_2">10sp</dimen>
+    <dimen name="caption_headline">19sp</dimen>
+    <dimen name="caption_headline_1">17sp</dimen>
+    <dimen name="caption_subtitle_1">18sp</dimen>
+    <dimen name="caption_subtitle_2">14sp</dimen>
+    <dimen name="caption_subtitle_13">13sp</dimen>
+    <dimen name="caption_subtitle_3">12sp</dimen>
+    <dimen name="caption_15sp">15sp</dimen>
+    <dimen name="caption_16sp">16sp</dimen>
+    <dimen name="text_17sp">17sp</dimen>
+    <dimen name="caption_19sp">19sp</dimen>
+    <dimen name="toolbar_20sp">20sp</dimen>
+    <dimen name="caption_21sp">21sp</dimen>
+    <dimen name="profile_name">22sp</dimen>
+    <dimen name="caption_title">24sp</dimen>
+    <dimen name="caption_medium_title">30sp</dimen>
+    <dimen name="text_30sp">30sp</dimen>
+    <dimen name="text_32sp">32sp</dimen>
+    <dimen name="caption_big_title">34sp</dimen>
+    <dimen name="bottom_sheet_title">22sp</dimen>
+</resources>
