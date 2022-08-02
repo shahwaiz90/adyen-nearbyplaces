@@ -1,28 +1,41 @@
 # Adyen Android Assignment
 
-This repository contains the coding challenge for candidates applying for a Senior Android role at Adyen.
-It consists of two unrelated parts:
+## YouTube Video Demo
 
-## 1. Cash Register
-Your first task is to implement a cash register. See the `cashregister` module.
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/b4LX7idyPOc/0.jpg)](https://www.youtube.com/watch?v=b4LX7idyPOc)
 
-Criteria:
-- The `CashRegister` gets initialized with some `Change`.
-- When performing a transaction, it either returns a `Change` object or fails with a `TransactionException`.
-- The `CashRegister` keeps track of the `Change` that's in it.
 
-Bonus points:
-- The cash register returns the minimal amount of change (i.e. the minimal amount of coins / bills).
+## 1. Tasks Completed
+- When you click on the *`Find near by places`* chip, it will show near by places from where the map is loaded.
+- Handled Configuration Change. (Check with Landscape & Portrait Mode)
+- Permission Handling (Location Permission and LocationServicesEnabled Permission)
+- Added animations on the List and Chip View (near by places).
+- Wrote Test cases for View (viewmodel), Data (Api, Repo), Domain (interactor) layers 
+- Implemented Architecture MVVM + Clean architecture + SOLID principles (for separation of concerns and easier unit testing.)
+- Dependency Injection: HILT
+- Test cases for CashRegister Module
 
-## 2. App
-Your second task is to implement a small app using the Foursquare Places API. See the `app` module.
+## 2. Demo Screenshots
+1 - CashRegister test cases
 
-The app should show a list of venues around the user’s current location.
-Decide yourself which venue details should be relevant to the user. You have full freedom on how to present data on screen.
-We've already added some code to make it a bit easier for you, but you are free to change any part of it.
-We are going to check your implementation for understanding Android specifics (like handling configuration changes), UX choices, and overall architecture.
-You are free to add any feature or code you want, but we also value quality over quantity, so whatever you decide to do, try to show us your best.
+<img src="https://i.ibb.co/c6612Fc/Screenshot-2022-08-02-at-5-16-12-PM.png" width="700" /> 
 
-### Setup
-Add your Foursquare client ID and secret to `local.gradle`. See `local.gradle.example` for details.
-Tip: You can verify your credentials with `src/test/java/com/adyen/android/assignment/PlacesUnitTest.kt`
+2 - Showing Near By Places
+
+<img src="https://i.ibb.co/TPC8vHP/Screenshot-2022-08-02-at-5-04-12-PM.png" width="200" />  
+
+3 - Showing Current Location
+
+<img src="https://i.ibb.co/NN715mg/Screenshot-2022-08-02-at-5-10-12-PM.png" width="200" /> 
+
+4 - Asking to enable location services
+
+<img src="https://i.ibb.co/d0QbFCy/Screenshot-2022-08-02-at-5-12-30-PM.png" width="200" />  
+
+5 - Requesting Camera Permissions
+
+<img src="https://i.ibb.co/dGTnYN4/Screenshot-2022-08-02-at-5-14-28-PM.png" width="200" />   
+
+6 - Test cases for view, data, domain layers
+
+<img src="https://i.ibb.co/WKcD73R/Screenshot-2022-08-02-at-3-44-23-PM.png" width="700" />  
