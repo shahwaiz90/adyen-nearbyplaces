@@ -6,16 +6,32 @@
 
 
 ## 1. Tasks Completed
-- When you click on the *`Find near by places`* chip, it will show near by places from where the map is loaded.
-- Handled Configuration Change. (Check with Landscape & Portrait Mode)
-- Permission Handling (Location Permission and LocationServicesEnabled Permission)
-- Added animations on the List and Chip View (near by places).
-- Wrote Test cases for View (viewmodel), Data (Api, Repo), Domain (interactor) layers 
-- Implemented Architecture MVVM + Clean architecture + SOLID principles (for separation of concerns and easier unit testing.)
-- Dependency Injection: HILT
-- Test cases for CashRegister Module
+- When you click on the `Find near by places` chip, it will show near by places from the current position of the map.
+- Handled Configuration Change. (Check with Landscape & Portrait Mode). `To support more devices`
+- Permission Handling (Location Permission and LocationServicesEnabled Permission). `To achieve accurate results`
+- Added animations on the List and Chip View (near by places). `To improve UX`
+- Added a separate module for Network APIs. `To achieve modularization and reusablity`
+- Test cases for View (viewmodel), Data (Api, Repo), Domain (interactor) layers 
+- Test cases for CashRegister Module.
 
-## 2. Demo Screenshots
+## 2. Tech Stack
+- Implemented Architecture MVVM + Clean architecture + SOLID principles. `For separation of concerns and easier unit testing.`
+- Dependency Injection: HILT. `To achieve dependency injection concept in the SOLID principles`
+- Coroutines. `To achieve simplification in API requests and making less load on the memory`
+- LocationServices: FusedLocationProviderClient. `To avoid draining the battery`
+
+## 3. CashRegister Logic in processTransaction (Summary)
+- If product price is greater than amount paid then we through exception, if not then go to step 2.
+- We reverse the list.
+- We start from the end of the list, untill payBackAmount(amountPaid - productPrice) is minimum.
+- We check the count of the current bill/coin.
+  - If count is more than 1, then we make keep on subtracting those amounts until we get amount equal to payBackAmount or less.
+  - If count is not more than 1, then we just subtract it go to the next index.
+- Then we keep on subtracting the amount untill we get payBackAmount or less.
+- If the amount is equal to payBackAmount we return the change, otherwise we through exception that change is not available.
+- I think it can be improved if we start from center and apply binary search on it.
+
+## 4. Demo Screenshots
 1 - CashRegister test cases
 
 <img src="https://i.ibb.co/c6612Fc/Screenshot-2022-08-02-at-5-16-12-PM.png" width="700" /> 
